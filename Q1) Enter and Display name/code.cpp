@@ -14,5 +14,7 @@ int main() {
 
     cout<<"\nName: "<<name<<endl;
     cout<<"Your bio - \n "<<bio<<endl;
+
+    cout<<"Add a new line"<<endl;
     return 0;
 }
