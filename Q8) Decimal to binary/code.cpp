@@ -2,19 +2,24 @@
 using namespace std;
 
 int main() {
-    int n, arr[12], i;
+    int n, arr[12], i, rem;
     
     cout<<"Decimal to binary:- "<<endl;
     cout<<"Enter a deciaml number\n: ";
     cin>>n;
 
-    for(i = 0; n > 0; i++) {
-        arr[i] = n % 2;
+    i = 0;
+    while(n > 0) {
+        rem = n % 2;
         n = n / 2;
-    }   
-    for(i=i-1; i>=0; i--) {
-        cout<<arr[i];
-    }  
+        arr[i] = rem;
+        i++;
+    } 
+
+    cout<<"Binary number: ";
+    for(int j = i-1; j >=0; j--) {
+        cout<<arr[j];
+    } 
 
     return 0;
 }
