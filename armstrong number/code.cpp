@@ -21,6 +21,7 @@ int main() {
     // store the no_of_digits
     count_digits = no_of_digits(num);
 
+   
     while(num>0) {
         rem = num % 10;  //3
 
